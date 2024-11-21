@@ -1,6 +1,7 @@
 <script setup>
 definePageMeta({
-  layout: 'auth'
+  layout: 'auth',
+  colorMode: 'light',
 });
 
 // Reactive form data
