@@ -42,7 +42,7 @@ const stores = ref([
       "https://via.placeholder.com/300/222"
     ],
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    link: "#",
+    link: "/store",
     activeImageIndex: 0
   },
   {
@@ -54,7 +54,7 @@ const stores = ref([
       "https://via.placeholder.com/300/444"
     ],
     description: "Another example text to showcase the card title and make up the bulk of the card's content.",
-    link: "#",
+    link: "/store",
     activeImageIndex: 0
   },
   {
@@ -66,7 +66,7 @@ const stores = ref([
       "https://via.placeholder.com/300/666"
     ],
     description: "More example text to build on the card title and make up the bulk of the card's content.",
-    link: "#",
+    link: "/store",
     activeImageIndex: 0
   }
 ]);

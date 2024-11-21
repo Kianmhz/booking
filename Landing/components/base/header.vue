@@ -1,7 +1,7 @@
 <template>
   <header class="fixed bg-[--sec-bg] top-0 w-full z-50 shadow">
     <UContainer>
-      <div class="grid grid-flow-col grid-cols-3 h-16">
+      <div class="grid grid-flow-col grid-cols-2 h-16">
         <div class="flex items-center space-x-4 col-span-1 justify-start font-bold">
           <nuxt-link to="/" class="flex items-center space-x-2">
             <div class="bg-blue-600 text-white w-12 h-12 flex items-center justify-center text-2xl rounded relative">
@@ -12,11 +12,6 @@
           <div class="hidden text-2xl sm:block">
             <span class="logo text-[--text] font-Pacifico">Milestone</span>
           </div>
-        </div>
-        <div class="hidden sm:flex space-x-10 items-center justify-center col-span-1 font-semibold text-[--text]">
-          <nuxt-link class="hover:text-[--main-special] transition-colors duration-300" to="/dashboard">Dashboard</nuxt-link>
-          <nuxt-link class="hover:text-[--main-special] transition-colors duration-300" to="/inventory">Inventory</nuxt-link>
-          <nuxt-link class="hover:text-[--main-special] transition-colors duration-300" to="/profile">Settings</nuxt-link>
         </div>
         <div class="flex flex-row justify-center md:justify-end items-center col-span-1 space-x-3">
             <UButton
@@ -33,11 +28,16 @@
               aria-label="Login"
               to="/auth"
             />
+            <UButton
+            icon="heroicons:user-16-solid"
+            color="gray"
+            variant="ghost"
+            aria-label="Login"
+            to="/profile"
+            />
             <!-- Dark Mode Toggle -->
             <UColorModeButton />
         </div>
-        <!-- Mobile Menu Toggle -->
-        <BaseMobileMenu />
       </div>
     </UContainer>
     <UModal v-model="isOpen">

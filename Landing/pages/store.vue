@@ -53,10 +53,20 @@ const services = [{
             </div>
         </UContainer>
     </div>
-    
+
     <UContainer>
         <div v-show="activeTab === 'about'">
             <div class="flex flex-col gap-10 my-10">
+                <div class="bg-[--sec-bg] p-10 rounded-3xl shadow">
+                    <h2 class="text-2xl font-bold mb-4">About Store</h2>
+                    <div class="store-description">
+                        <p class="text-[--light-text]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in bibendum velit, at posuere nisi. Sed consequat sem vel elit auctor congue. Proin malesuada arcu nec dolor dignissim, at scelerisque elit posuere.</p>
+                    </div>
+                    <h2 class="text-2xl font-bold mt-8 mb-4">Location</h2>
+                    <div class="store-location">
+                        <p class="text-[--light-text]">The store is conveniently located in the heart of Mumbai, India. Its address is 123 Main Street, Mumbai. It is easily accessible and offers a stunning view of the city skyline.</p>
+                    </div>
+                </div>
                 <div class="bg-[--sec-bg] p-10 rounded-3xl shadow">
                     <h2 class="text-2xl font-bold mb-4">Services</h2>
                     <UPageGrid>
@@ -69,16 +79,6 @@ const services = [{
                 </div>
                 <div>
                     <StoreReview/>
-                </div>
-                <div class="bg-[--sec-bg] p-10 rounded-3xl shadow">
-                    <h2 class="text-2xl font-bold mb-4">About Store</h2>
-                    <div class="store-description">
-                        <p class="text-[--light-text]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in bibendum velit, at posuere nisi. Sed consequat sem vel elit auctor congue. Proin malesuada arcu nec dolor dignissim, at scelerisque elit posuere.</p>
-                    </div>
-                    <h2 class="text-2xl font-bold mt-8 mb-4">Location</h2>
-                    <div class="store-location">
-                        <p class="text-[--light-text]">The store is conveniently located in the heart of Mumbai, India. Its address is 123 Main Street, Mumbai. It is easily accessible and offers a stunning view of the city skyline.</p>
-                    </div>
                 </div>
             </div>
         </div>
