@@ -47,35 +47,47 @@
 </template>
 
 <script setup>
-const colorMode = useColorMode()
-const isOpen = ref(false)
-const toast = useToast()
-const router = useRouter()
-const commandPaletteRef = ref()
-const users = [
-
-]
+const isOpen = ref(false);
+const router = useRouter();
 
 const actions = [
-  { id: 'new-file', label: 'Add new file', icon: 'i-heroicons-document-plus', click: () => toast.add({ title: 'New file added!' }), shortcuts: ['⌘', 'N'] },
-  { id: 'new-folder', label: 'Add new folder', icon: 'i-heroicons-folder-plus', click: () => toast.add({ title: 'New folder added!' }), shortcuts: ['⌘', 'F'] },
-  { id: 'hashtag', label: 'Add hashtag', icon: 'i-heroicons-hashtag', click: () => toast.add({ title: 'Hashtag added!' }), shortcuts: ['⌘', 'H'] },
-  { id: 'label', label: 'Add label', icon: 'i-heroicons-tag', click: () => toast.add({ title: 'Label added!' }), shortcuts: ['⌘', 'L'] }
-]
+  {
+    id: 'go-home',
+    label: 'Go to Home',
+    icon: 'i-heroicons-home',
+    click: () => router.push('/')
+  },
+  {
+    id: 'go-profile',
+    label: 'Go to Profile',
+    icon: 'i-heroicons-user',
+    click: () => router.push('/profile')
+  },
+  {
+    id: 'go-auth',
+    label: 'Go to Login',
+    icon: 'i-heroicons-arrow-left-on-rectangle',
+    click: () => router.push('/auth')
+  }
+];
 
-const groups = computed(() =>
-  [commandPaletteRef.value?.query ? {
-    key: 'users',
-    commands: users
-  } : {
-    key: 'recent',
-    label: 'Recent searches',
-    commands: users.slice(0, 1)
-  }, {
+const groups = computed(() => [
+  {
     key: 'actions',
+    label: 'Actions',
     commands: actions
-  }].filter(Boolean))
+  }
+]);
+
+const onSelect = (command) => {
+  if (command?.click) {
+    command.click();
+  } else {
+    console.warn('No action defined for this command:', command);
+  }
+};
 </script>
+
 
 <style scoped>
 .logo {
