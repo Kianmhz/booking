@@ -1,0 +1,4 @@
+<template>
+    <StoreCard />
+    <BasePagination />
+</template>

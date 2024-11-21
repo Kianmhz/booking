@@ -1,0 +1,114 @@
+/* Resetting default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient-color: linear-gradient(45deg,
+            var(--main-special) 0%,
+            var(--sec-special) 10%,
+            var(--main-special) 20%,
+            var(--sec-special) 30%,
+            var(--main-special) 40%,
+            var(--sec-special) 50%,
+            var(--main-special) 60%,
+            var(--sec-special) 70%,
+            var(--main-special) 80%,
+            var(--sec-special) 90%,
+            var(--main-special) 100%);
+}
+
+/* Default light theme variables */
+html {
+    --main-bg: #e5e7eb;
+    --sec-bg: #FFFFFF;
+    /* --heavy-text: #3F72AF; */
+    --text: #171717;
+    --light-text: #555555;
+    --border: #DDDDDD;
+    --main-special: #4683f7;
+    --sec-special: #8067e8;
+}
+
+/* Dark theme variables */
+html.dark {
+    --main-bg: #1e293b;
+    --sec-bg: #101827;
+    /* --heavy-text: #fff; */
+    --text: #EEEEEE;
+    --light-text: #B0B0B0;
+    --border: #4A4E56;
+    --main-special: #8067e8;
+    --sec-special: #4683f7;
+}
+
+
+body {
+    font-family: 'Oxygen' !important;
+    background: var(--main-bg) !important;
+    color: var(--text) !important;
+}
+
+.banner {
+    animation: gradient 60s linear infinite alternate;
+
+    background: var(--gradient-color);
+    background-size: 1000% 100%;
+}
+
+
+/* For dynamic gradient */
+@keyframes gradient {
+
+    /* Start at the top-left corner */
+    0% {
+        background-position: 0% 0%
+    }
+
+    /* End at the bottom-right corner */
+    100% {
+        background-position: 100% 100%
+    }
+}
+
+@keyframes contentAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes FadeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+@keyframes smoothBg {
+from {
+    background-position: 50% 50%, 50% 50%;
+}
+to {
+    background-position: 350% 50%, 350% 50%;
+}
+}
+
+  
+@keyframes shapeAnimation {
+    0% {
+      transform: rotate(45deg) translateY(0);
+    }
+    100% {
+      transform: rotate(45deg) translateY(-10px);
+    }
+  }
