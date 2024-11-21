@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bg-[--sec-bg]">
-    <div class="border-b border-[--border] py-8">
+    <div class="border-y border-[--border] py-8">
       <UContainer>
         <div class="grid mb-4 md:grid-cols-4 gap-10">
           <div class="flex flex-col">

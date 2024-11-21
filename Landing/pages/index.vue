@@ -229,11 +229,11 @@ onMounted(() => {
 
   --rainbow: repeating-linear-gradient(
     100deg,
-    #8067e8 10%, /* close to --main-special */
-    #9a86f8 15%, /* lighter shade of --main-special */
-    #4683f7 20%, /* close to --sec-special */
-    #6aa0f8 25%, /* lighter shade of --sec-special */
-    #7e65e7 30%  /* a slight variation of --main-special */
+    #8067e8 10%,
+    #9a86f8 15%,
+    #4683f7 20%,
+    #6aa0f8 25%,
+    #7e65e7 30%
   );
   background-image: var(--stripes), var(--rainbow);
   background-size: 300%, 200%;
