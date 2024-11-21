@@ -6,8 +6,8 @@
           <div class="flex flex-col">
             <span class="pb-5 text-[--text] font-bold">Company</span>
             <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300" to="/about">About Us</nuxt-link>
-            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300" to="/privacy">Privacy Policy</nuxt-link>
-            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300" to="/terms">Terms of Service</nuxt-link>
+            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300">Privacy Policy</nuxt-link>
+            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300">Terms of Service</nuxt-link>
           </div>
           <div class="flex flex-col">
             <span class="pb-5 text-[--text] font-bold">Support</span>
@@ -32,8 +32,8 @@
         <div class="flex flex-wrap justify-between items-center text-sm text-[--text]">
           <div class="flex flex-wrap items-center space-x-4">
             <p>&copy; 2024 Ærvin & Kianmhz. All rights reserved.</p>
-            <nuxt-link class="hover:text-[--main-special] transition-colors duration-300" to="/privacy">Privacy</nuxt-link>
-            <nuxt-link class="hover:text-[--main-special] transition-colors duration-300" to="/terms">Terms</nuxt-link>
+            <nuxt-link class="hover:text-[--main-special] transition-colors duration-300">Privacy</nuxt-link>
+            <nuxt-link class="hover:text-[--main-special] transition-colors duration-300">Terms</nuxt-link>
           </div>
           <div class="flex space-x-4 text-[--text] text-lg mt-4 sm:mt-0">
             <Icon name="mdi:instagram" size="20" class="hover:text-[--main-special] transition-colors duration-300"/>

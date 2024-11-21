@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  layout: 'customLayout'
+  layout: 'auth'
 });
 
 // Reactive form data

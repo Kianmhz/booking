@@ -44,50 +44,50 @@ const onFileChange = (event) => {
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="form-group">
         <label for="firstName" class="block text-sm font-medium text-[--light-text]">First Name</label>
-        <BaseInput
+        <!-- <BaseInput
           id="firstName"
           v-model="user.first_name"
           placeholder="Enter first name"
           icon="material-symbols:account-circle"
-        />
+        /> -->
       </div>
       <div class="form-group">
         <label for="lastName" class="block text-sm font-medium text-[--light-text]">Last Name</label>
-        <BaseInput
+        <!-- <BaseInput
           id="lastName"
           v-model="user.last_name"
           placeholder="Enter last name"
           icon="ph:signature-bold"
-        />
+        /> -->
       </div>
       <div class="form-group">
         <label for="mobileNumber" class="block text-sm font-medium text-[--light-text]">Mobile Number</label>
-        <BaseInput
+        <!-- <BaseInput
           id="mobileNumber"
           v-model="user.phone"
           placeholder="Enter mobile number"
           icon="majesticons:iphone-x-apps-line"
-        />
+        /> -->
       </div>
       <div class="form-group">
         <label for="emailId" class="block text-sm font-medium text-[--light-text]">Email ID</label>
-        <BaseInput
+        <!-- <BaseInput
           id="emailId"
           v-model="user.email"
           type="email"
           placeholder="Enter email ID"
           icon="material-symbols:alternate-email"
-        />
+        /> -->
       </div>
       <div class="form-group">
         <label for="dateOfBirth" class="block text-sm font-medium text-[--light-text]">Date of Birth</label>
-        <BaseInput
+        <!-- <BaseInput
           id="dateOfBirth"
           v-model="user.date_of_birth"
           type="date"
           placeholder="Enter date of birth"
           icon="material-symbols:cake"
-        />
+        /> -->
       </div>
     </div>
     <div class="mt-6 text-right">
