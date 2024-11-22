@@ -34,7 +34,7 @@ const services = [{
     </div>
     <div class="tabs w-full bg-[--sec-bg] transition duration-300 z-10">
         <UContainer>
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-2">
                 <button 
                     class="tab-button py-6 lg:py-8 text-sm sm:text-base lg:text-lg border-none cursor-pointer outline-none relative transition-all duration-300"
                     :class="{ 'active': activeTab === 'about' }" @click="changeTab('about')">
@@ -42,13 +42,8 @@ const services = [{
                 </button>
                 <button 
                     class="tab-button py-6 lg:py-8 text-sm sm:text-base lg:text-lg border-none cursor-pointer outline-none relative transition-all duration-300"
-                    :class="{ 'active': activeTab === 'products' }" @click="changeTab('products')">
-                    Products
-                </button>
-                <button 
-                    class="tab-button py-6 lg:py-8 text-sm sm:text-base lg:text-lg border-none cursor-pointer outline-none relative transition-all duration-300"
-                    :class="{ 'active': activeTab === 'reviews' }" @click="changeTab('reviews')">
-                    Reviews
+                    :class="{ 'active': activeTab === 'booking' }" @click="changeTab('booking')">
+                    Booking
                 </button>
             </div>
         </UContainer>
@@ -82,14 +77,8 @@ const services = [{
                 </div>
             </div>
         </div>
-        <div v-show="activeTab === 'products'">
-            <div class="container mx-auto px-4 py-6">
-                <h2 class="text-2xl font-bold mb-4 text-third-color">Our Products</h2>
-                <!-- Products content here -->
-            </div>
-        </div>
-        <div v-show="activeTab === 'reviews'">
-            <StoreReviewtab/>
+        <div v-show="activeTab === 'booking'">
+            <StoreBooking/>
         </div>
     </UContainer>
 </template>

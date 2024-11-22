@@ -37,6 +37,7 @@
     "@vesp/nuxt-fontawesome": "^1.0.4",
     "nuxt": "^3.12.2",
     "nuxt-aos": "^1.2.4",
+    "nuxt-calendly": "^0.1.21",
     "nuxt-headlessui": "^1.2.0",
     "nuxt-icon": "^0.6.10"
   }
