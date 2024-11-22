@@ -53,21 +53,15 @@ const router = useRouter();
 const actions = [
   {
     id: 'go-home',
-    label: 'Go to Home',
+    label: 'Home',
     icon: 'i-heroicons-home',
     click: () => router.push('/')
   },
   {
-    id: 'go-profile',
-    label: 'Go to Profile',
-    icon: 'i-heroicons-user',
-    click: () => router.push('/profile')
-  },
-  {
-    id: 'go-auth',
-    label: 'Go to Login',
-    icon: 'i-heroicons-arrow-left-on-rectangle',
-    click: () => router.push('/auth')
+    id: 'go-explore',
+    label: 'Explore',
+    icon: 'heroicons:globe-alt',
+    click: () => router.push('/explore')
   }
 ];
 
