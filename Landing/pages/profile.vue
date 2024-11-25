@@ -81,7 +81,7 @@ const onFileChange = (event) => {
         <div class="md:col-span-1 max-sm:text-center">
           <ul class="flex flex-col">
             <li @click="switchToProfile" class="text-lg font-semibold text-[--text] cursor-pointer hover:text-[--main-special] transition-colors duration-200 ease-in-out border-b border-[--border] py-2">Profile</li>
-            <li @click="switchToStore" class="text-lg font-semibold text-[--text] cursor-pointer hover:text-[--main-special] transition-colors duration-200 ease-in-out border-[--border] py-2">Store</li>
+            <li @click="switchToStore" class="text-lg font-semibold text-[--text] cursor-pointer hover:text-[--main-special] transition-colors duration-200 ease-in-out border-[--border] py-2">Properties</li>
           </ul>
         </div>
         <div class="md:col-span-3">
