@@ -6,7 +6,7 @@
     <div class="relative">
       <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
       <div class="mt-1">
-        <BaseInput
+        <UInput
           id="name"
           v-model="form.name"
           placeholder="Enter your name"
@@ -19,7 +19,7 @@
     <div class="relative">
       <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
       <div class="mt-1">
-        <BaseInput
+        <UInput
           id="email"
           v-model="form.email"
           type="email"
@@ -33,13 +33,12 @@
     <div class="relative">
       <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
       <div class="mt-1">
-        <textarea
+        <UTextarea
           v-model="form.message"
           id="message"
           rows="4"
-          class="block w-full pl-2 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           placeholder="Enter your message"
-        ></textarea>
+        ></UTextarea>
         <span v-if="errors.message" class="text-red-500 text-sm absolute right-2 top-9">{{ errors.message }}</span>
       </div>
     </div>

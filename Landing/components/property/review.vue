@@ -60,7 +60,7 @@
         <UModal v-model="isOpen">
           <form class="w-full p-10 mx-auto space-y-4" @submit.prevent="submitReview">
             <h1>Share your thoughts</h1>
-            <StoreStars v-model="reviewForm.rating" />
+            <PropertyStars v-model="reviewForm.rating" />
             <UInput
               type="text"
               placeholder="Name"

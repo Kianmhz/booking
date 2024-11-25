@@ -33,7 +33,7 @@
       <UContainer>
         <div class="flex flex-wrap justify-between items-center text-sm text-[--text]">
           <div class="flex flex-wrap items-center space-x-4">
-            <p>&copy; 2024 Ærvin & Kianmhz. All rights reserved.</p>
+            <p>&copy; 2024 Milestone Inc. All rights reserved.</p>
             <nuxt-link class="hover:text-[--main-special] transition-colors duration-300">Privacy</nuxt-link>
             <nuxt-link class="hover:text-[--main-special] transition-colors duration-300">Terms</nuxt-link>
           </div>

@@ -89,7 +89,7 @@ const onFileChange = (event) => {
             <ProfileUser />
           </div>
           <div v-show="storePage">
-            <ProfileStore />
+            <ProfileProperty />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
 <template>
-    <StoreCard />
+    <PropertyCard />
     <BasePagination />
 </template>

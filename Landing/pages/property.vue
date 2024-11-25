@@ -69,12 +69,12 @@ const services = [{
                     </UPageGrid>
                 </div>
                 <div>
-                    <StoreReview/>
+                    <PropertyReview/>
                 </div>
             </div>
         </div>
         <div v-show="activeTab === 'booking'">
-            <StoreBooking/>
+            <PropertyBooking/>
         </div>
     </UContainer>
 </template>
