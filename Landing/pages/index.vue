@@ -6,18 +6,17 @@
       <div class="content">
         <UContainer>
           <div class="hero-text">
-            <h2 class="uppercase tracking-wider text-lg md:text-xl">Achieving Success, One Milestone at a Time</h2>
-            <h1 class="text-5xl sm:text-6xl font-bold my-10">Empowering Your Business Journey</h1>
-            <p class="text-xl sm:text-2xl mb-14">Streamline operations, enhance efficiency, and drive growth with Milestone</p>
+            <h2 class="uppercase tracking-wider text-lg md:text-xl">Discover Comfort, One Milestone at a Time</h2>
+            <h1 class="text-5xl sm:text-6xl font-bold my-10">Empowering Your Travel Experience</h1>
+            <p class="text-xl sm:text-2xl mb-14">Find the perfect stay, create unforgettable memories, and explore with Milestone</p>
           </div>
           <div class="hero-btn">
             <UButton
               to="/auth"
-              class=" w-full sm:w-auto px-8 py-3 text-lg font-bold rounded-xl transform hover:scale-105"
+              class=" w-full sm:w-auto px-8 py-3 text-lg font-bold rounded-xl"
             >
               Sign Up for Free
             </UButton>
-            <p class="mt-4">30 Days free trial · No credit card required</p>
           </div>
         </UContainer>
       </div>
@@ -125,7 +124,6 @@
       </div>
     </section>
 
-    <!-- Contact Us Section -->
     <UContainer>
       <section class="py-16">
         <div>

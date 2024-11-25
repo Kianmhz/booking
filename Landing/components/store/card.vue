@@ -1,14 +1,14 @@
 <template>
   <UContainer>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 py-10 justify-items-center">
-      <div v-for="(store, storeIndex) in stores" :key="store.id" class="relative p-10 bg-[--sec-bg] shadow rounded-3xl">
+      <div v-for="(store, storeIndex) in stores" :key="store.id" class="relative p-8 bg-[--sec-bg] shadow rounded-3xl">
         <div
           v-for="(image, imageIndex) in store.images"
           :key="imageIndex"
           v-show="imageIndex === store.activeImageIndex"
           class="flex flex-col md:flex-row items-center gap-10"
         >
-          <div class="overflow-hidden w-64 h-64 shadow rounded-3xl">
+          <div class="overflow-hidden w-72 h-72 shadow rounded-3xl">
             <NuxtImg :src="image" :alt="store.name" class="w-full h-full object-cover" />
           </div>
           <div class="flex-1 text-center md:text-left">
@@ -35,37 +35,49 @@
 const stores = ref([
   {
     id: 1,
-    name: "Store One",
+    name: "Cozy Cottage",
     images: [
-      "https://via.placeholder.com/300",
-      "https://via.placeholder.com/300/111",
-      "https://via.placeholder.com/300/222"
+      "cottage.png",
+      "cottage2.png",
+      "cottage3.png",
     ],
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    description: "A cozy cottage in the woods.",
     link: "/store",
     activeImageIndex: 0
   },
   {
     id: 2,
-    name: "Store Two",
+    name: "Beachfront Villa",
     images: [
-      "https://via.placeholder.com/300",
-      "https://via.placeholder.com/300/333",
-      "https://via.placeholder.com/300/444"
+      "beach.png",
+      "beach2.png",
+      "beach3.png",
     ],
-    description: "Another example text to showcase the card title and make up the bulk of the card's content.",
+    description: "A beautiful villa by the beach.",
     link: "/store",
     activeImageIndex: 0
   },
   {
     id: 3,
-    name: "Store Three",
+    name: "City Apartment",
     images: [
-      "https://via.placeholder.com/300",
-      "https://via.placeholder.com/300/555",
-      "https://via.placeholder.com/300/666"
+      "condo.png",
+      "condo2.png",
+      "condo3.png",
     ],
-    description: "More example text to build on the card title and make up the bulk of the card's content.",
+    description: "An apartment in the heart of the city.",
+    link: "/store",
+    activeImageIndex: 0
+  },
+  {
+    id: 4,
+    name: "Mountain Lodge",
+    images: [
+      "mount.png",
+      "mount2.png",
+      "mount3.png",
+    ],
+    description: "A lodge with stunning mountain views.",
     link: "/store",
     activeImageIndex: 0
   }

@@ -162,32 +162,13 @@ const reviews = {
       id: 1,
       rating: 5,
       content: `
-        <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd amount of snacks for the many long and hungry flights.</p>
+        <p>Absolutely loved it!</p>
       `,
       author: "Emily Selman",
       avatarSrc:
         "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
     },
-    {
-      id: 2,
-      rating: 4,
-      content: `
-      <p>It's a great bag and I love the color. The only thing I would change is the size of the straps. They are a little too thin for my liking.</p>
-      `,
-      author: "Jenny Wilson",
-      avatarSrc:
-        "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
-    },
-    {
-      id: 3,
-      rating: 3,
-      content: `
-      <p>I like the bag, but it's not as spacious as I thought it would be. The color is nice, and the material feels durable.</p>
-      `,
-      author: "Alex Johnson",
-      avatarSrc:
-        "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
-    },
+    
   ],
 };
 </script>

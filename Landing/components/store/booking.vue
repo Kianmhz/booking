@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { format, parseISO, isValid, differenceInCalendarDays } from 'date-fns';
+import { format, differenceInCalendarDays } from 'date-fns';
 
 const toast = useToast();
 
@@ -13,7 +13,7 @@ const checkOutDate = ref(null);
 const totalPrice = ref(0);
 
 // Room pricing
-const pricePerNight = 100;
+const pricePerNight = 150.00;
 
 // Function to calculate the total price
 const calculateTotalPrice = () => {
@@ -107,7 +107,7 @@ const bookRoom = () => {
       <div class="flex flex-col justify-between">
         <div>
           <p class="text-lg">
-            Price per night: <span class="font-bold">$100</span>
+            Price per night: <span class="font-bold">$150</span>
           </p>
           <p v-if="totalPrice > 0" class="text-lg mt-4">
             Total Price: <span class="font-bold">${{ totalPrice }}</span>

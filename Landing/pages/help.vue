@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                  <nuxt-img src="https://via.placeholder.com/600" alt="FAQ Image" class="rounded-3xl shadow-lg w-80 h-80" />
+                  <nuxt-img src="faq.png" alt="FAQ Image" class="rounded-3xl w-80 h-80" />
                 </div>
             </div>
         </UContainer>
