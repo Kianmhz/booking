@@ -24,7 +24,7 @@ const services = [{
     <div class="relative flex items-center justify-center mt-16 h-[500px]">
         <div class="absolute inset-0 bg-cover bg-center filter blur-[3px]" style="background-image: url('cottage2.png')"></div>
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 text-[--text] text-center text-3xl">
+        <div class="relative z-10 text-[#EEEEEE] text-center text-3xl">
             <div>Cozy Cottage</div>
         </div>
     </div>

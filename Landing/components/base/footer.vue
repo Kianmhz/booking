@@ -5,7 +5,7 @@
         <div class="grid mb-4 md:grid-cols-4 gap-10">
           <div class="flex flex-col">
             <span class="pb-5 text-[--text] font-bold">Company</span>
-            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300" to="/about">About Us</nuxt-link>
+            <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300">About Us</nuxt-link>
             <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300">Privacy Policy</nuxt-link>
             <nuxt-link class="pb-2 text-[--text] hover:text-[--main-special] transition-colors duration-300">Terms of Service</nuxt-link>
           </div>
@@ -22,8 +22,10 @@
           </div>
           <div class="flex flex-col">
             <span class="pb-5 text-[--text] font-bold">About Milestone</span>
-            <p class="text-[--text]">Milestone is dedicated to helping store owners streamline their operations, manage inventory efficiently, and enhance customer engagement.</p>
-          </div>
+            <p class="text-[--text]">
+              Milestone connects travelers with unique stays and verified hosts, ensuring comfort, convenience, and unforgettable memories at every step.
+            </p>
+          </div>                  
         </div>
       </UContainer>
     </div>

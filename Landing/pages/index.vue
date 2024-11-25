@@ -1,21 +1,21 @@
 <template>
   <div class="bg-[--sec-bg]">
-    <!-- Hero section -->
+    <!-- Hero Section -->
     <div class="hero relative min-h-screen overflow-hidden">
       <div class="hero-bg absolute w-full h-full top-0 left-0"></div>
       <div class="content">
         <UContainer>
           <div class="hero-text">
-            <h2 class="uppercase tracking-wider text-lg md:text-xl">Discover Comfort, One Milestone at a Time</h2>
+            <h2 class="uppercase tracking-wider text-lg md:text-xl">Your Perfect Stay, One Milestone Away</h2>
             <h1 class="text-5xl sm:text-6xl font-bold my-10">Empowering Your Travel Experience</h1>
             <p class="text-xl sm:text-2xl mb-14">Find the perfect stay, create unforgettable memories, and explore with Milestone</p>
           </div>
           <div class="hero-btn">
             <UButton
-              to="/auth"
-              class=" w-full sm:w-auto px-8 py-3 text-lg font-bold rounded-xl"
+              to="/explore"
+              class="w-full sm:w-auto px-8 py-3 text-lg font-bold rounded-xl"
             >
-              Sign Up for Free
+              Start Exploring
             </UButton>
           </div>
         </UContainer>
@@ -37,21 +37,21 @@
           <UContainer>
             <div class="relative">
               <div class="flex justify-center items-center gap-4">
-                <h2 class="text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">Empowering</h2>              
+                <h2 class="text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">Redefining</h2>              
                 <span class="relative inline-flex sm:inline">
                   <span class="banner blur-lg filter opacity-40 w-full h-full absolute inset-0"></span>
-                  <span class="text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">Store Owners</span>
+                  <span class="text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">Travel Comfort</span>
                 </span>
               </div>
-              <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-[--light-text]">Milestone provides a comprehensive management app designed to give store owners enhanced business insights, improve customer engagement, automate processes, and mitigate operational risks. Optimize productivity and acknowledge great work effortlessly.</p>
+              <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-[--light-text]">Milestone connects travelers with extraordinary stays. Discover destinations tailored to your needs, and enjoy seamless booking experiences.</p>
             </div>
             <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div class="relative">
-                <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Building Stronger Teams</h3>
-                <p class="mt-3 text-lg text-[--light-text]">At Milestone, we focus on creating strong teams by equipping store owners with tools to manage their staff effectively, ensuring they have the necessary experience and skills for success.</p>
+                <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Personalized Stays</h3>
+                <p class="mt-3 text-lg text-[--light-text]">Curate your stay experience with tailored recommendations and top-notch amenities to fit your travel style.</p>
                 <dl class="mt-10 space-y-10">
                   <ULandingGrid>
-                    <ULandingCard v-for="item in transferFeatures" class="col-span-6 row-span-2" icon="i-heroicons-swatch" :title="item.name" description="Choose a primary and a gray color from your Tailwind CSS color palette." />
+                    <ULandingCard v-for="item in travelFeatures" class="col-span-6 row-span-2" :icon="item.icon" :title="item.name" :description="item.description" />
                   </ULandingGrid>
                 </dl>
               </div>
@@ -60,63 +60,9 @@
               data-aos-offset="300"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-once="True" 
+              data-aos-once="true" 
               class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-                <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
-                  <defs>
-                    <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                      <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                    </pattern>
-                  </defs>
-                  <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
-                </svg>
-                <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-1.png" alt="Feature Image" />
-              </div>
-            </div>
-          </UContainer>
-
-          <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
-            <defs>
-              <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-              </pattern>
-            </defs>
-            <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-          </svg>
-          
-          <UContainer>
-            <div class="relative mt-12 sm:mt-16 lg:mt-24">
-              <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-                <div class="lg:col-start-2">
-                  <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Leading Management Solutions</h3>
-                  <p class="mt-3 text-lg text-[--light-text]">Milestone is a leader in management solutions for store owners. Whether it's inventory management, customer relationship management, or sales analytics, Milestone delivers top-notch solutions tailored to your needs.</p>
-                  <dl class="mt-10 space-y-10">
-                    <ULandingGrid>
-                      <ULandingCard class="col-span-6 row-span-2" icon="i-heroicons-swatch" title="Color Palette" description="Choose a primary and a gray color from your Tailwind CSS color palette." />
-                      <ULandingCard class="col-span-6 row-span-4" icon="i-heroicons-wrench-screwdriver" title="Fully Customizable" description="Change the style of any component in your App Config or with ui prop." />
-                      <ULandingCard class="col-span-6 row-span-4" icon="i-heroicons-face-smile" title="Icons" description="Choose any of the 100k+ icons from the most popular icon libraries." />
-                      <ULandingCard class="col-span-6 row-span-2" icon="i-heroicons-computer-desktop" title="Keyboard Shortcuts" description="Nuxt UI comes with a set of Vue composables to easily handle shortcuts." />
-                    </ULandingGrid>
-                  </dl>
-                </div>
-      
-                <div               
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-once="True" 
-                class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
-                  <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404" aria-hidden="true">
-                    <defs>
-                      <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                      </pattern>
-                    </defs>
-                    <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-                  </svg>
-                  <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-2.png" alt="Management Solutions" />
-                </div>
+                <NuxtImg class="shadow relative mx-auto" width="490" src="feature.png" alt="Feature Image" />
               </div>
             </div>
           </UContainer>
@@ -132,11 +78,11 @@
               <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
                 <div class="lg:self-center">
                   <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                    <span class="block">Ready to elevate your business?</span>
-                    <span class="block">Start your free trial today.</span>
+                    <span class="block">Ready for your next adventure?</span>
+                    <span class="block">Discover your Milestone today.</span>
                   </h2>
-                  <p class="mt-4 text-lg leading-6 text-indigo-200">Experience the full power of Milestone and see how we can transform your business operations.</p>
-                  <a href="#" class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up for free</a>
+                  <p class="mt-4 text-lg leading-6 text-indigo-200">Experience the full potential of Milestone and start exploring the best stays and unique destinations.</p>
+                  <nuxt-link to="/explore" class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-indigo-600 hover:bg-indigo-50">Start Exploring</nuxt-link>
                 </div>
               </div>
               <div
@@ -144,9 +90,9 @@
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-once="True" 
+              data-aos-once="true" 
               class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-                <img class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg" alt="App screenshot" />
+                <NuxtImg class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="app.png" alt="App screenshot" />
               </div>
             </div>
           </div>
@@ -161,55 +107,35 @@ definePageMeta({
   colorMode: 'light',
 })
 
-const transferFeatures = [
+
+const travelFeatures = [
   {
     id: 1,
-    name: 'Enhanced Business Insights',
-    description:
-      'Gain deep insights into your business operations with comprehensive analytics and reporting tools.',
-    icon: "line-md:briefcase-twotone",
+    name: 'Personalized Stays',
+    description: 'Curate your stay experience with tailored recommendations.',
+    icon: "material-symbols:hotel-outline",
   },
   {
     id: 2,
-    name: 'Customer Engagement',
-    description:
-      'Improve customer satisfaction and loyalty with tools designed to enhance engagement.',
-    icon: "line-md:person-add-twotone",
-  },
-  {
-    id: 3,
-    name: 'Automate Processes',
-    description:
-      'Reduce manual work and increase efficiency with automation features.',
+    name: 'Seamless Booking',
+    description: 'Effortlessly reserve your dream stay.',
     icon: "line-md:backup-restore",
   },
   {
+    id: 3,
+    name: 'Verified Hosts',
+    description: 'Stay confidently with our verified listings.',
+    icon: "tabler:shield-check",
+  },
+  {
     id: 4,
-    name: 'Operational Risks',
-    description:
-      'Mitigate operational risks and ensure business continuity with Milestone.',
-    icon: "line-md:shield-check-twotone",
-  },
-]
-const communicationFeatures = [
-  {
-    id: 1,
-    name: 'Team Collaboration',
-    description:
-      'Facilitate effective communication and collaboration among team members.',
-    icon: "line-md:laptop-twotone",
-  },
-  {
-    id: 2,
-    name: 'Inventory Management',
-    description:
-      'Keep track of your inventory in real-time and make informed decisions.',
-    icon: "line-md:clipboard-check-twotone",
+    name: 'Guest Reviews',
+    description: 'Make informed decisions with genuine feedback.',
+    icon: "ic:baseline-person-add-alt",
   },
 ]
 
 onMounted(() => {
-  // Initial setup for --stripe-color
   document.documentElement.style.setProperty('--stripe-color', '#fff');
 });
 </script>
