@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'nuxt-aos',
     "@nuxt/fonts",
     '@vueuse/nuxt',
+    "@sidebase/nuxt-auth",
   ],
 
   runtimeConfig: {

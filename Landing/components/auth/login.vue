@@ -63,7 +63,7 @@ const login = async () => {
     const response = await $fetch(`${apiHost}/auth`, {
       method: 'POST',
       body: {
-        username: username.value,
+        email: username.value,
         password: password.value,
       },
     });
