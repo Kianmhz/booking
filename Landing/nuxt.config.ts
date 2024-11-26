@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiHost: "http://localhost:7331"
+      apiHost: "http://localhost:3000",
     }
   },
 

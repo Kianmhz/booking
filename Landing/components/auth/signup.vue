@@ -149,6 +149,11 @@
 </template>
 
 <script setup>
+import axios from 'axios';
+
+const config = useRuntimeConfig();
+const apiHost = config.public.apiHost;
+
 const currentStep = ref(1);
 const steps = ref([
   { name: 'Step 1', status: 'current' },
@@ -190,19 +195,32 @@ function updateSteps() {
   });
 }
 
-function submitForm() {
-  // Handle form submission
-  console.log('Form submitted with:', {
-    firstName: firstName.value,
-    lastName: lastName.value,
-    username: username.value,
-    email: email.value,
-    phoneNumber: phoneNumber.value,
-    password: password.value,
-    confirmPassword: confirmPassword.value,
-  });
-  // Switch to login or other logic after submission
-  // $emit('switch-to-login');
+async function submitForm() {
+  try {
+    // Validate input before making the API call
+    if (password.value !== confirmPassword.value) {
+      alert('Passwords do not match.');
+      return;
+    }
+
+    const response = await useFetch(`${apiHost}/api/signup`, {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      username: username.value,
+      email: email.value,
+      phoneNumber: phoneNumber.value,
+      password: password.value,
+    });
+
+    console.log('Sign-up successful:', response.data);
+
+    // Handle successful sign-up (e.g., redirect to login)
+    alert('Sign-up successful! Please log in.');
+    $emit('switch-to-login');
+  } catch (error) {
+    console.error('Sign-up failed:', error.response?.data || error.message);
+    alert('Sign-up failed. Please check your input and try again.');
+  }
 }
 </script>
 

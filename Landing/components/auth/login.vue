@@ -23,7 +23,11 @@
         textColor="text-gray-900"
       />
       <div class="flex justify-between mt-10">
-        <button type="button" class="w-full py-3 px-5 bg-[#8067e8] text-white font-bold rounded-lg shadow-lg hover:bg-[#6b54d4] transition transform hover:scale-105">
+        <button
+          type="button"
+          class="w-full py-3 px-5 bg-[#8067e8] text-white font-bold rounded-lg shadow-lg hover:bg-[#6b54d4] transition transform hover:scale-105"
+          @click="login"
+        >
           <span class="flex items-center justify-center">
             Log In
           </span>
@@ -48,9 +52,37 @@
 </template>
 
 <script setup>
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 const apiHost = config.public.apiHost;
 
 const username = ref('');
 const password = ref('');
+
+const login = async () => {
+  try {
+    const response = await $fetch(`${apiHost}/auth/login`, {
+      method: 'POST',
+      body: {
+        username: username.value,
+        password: password.value,
+      },
+    });
+
+    // Handle success (e.g., store token, redirect)
+    const token = response.token; // Extract token from response
+    console.log('Login successful, token:', token);
+
+    if (token) {
+      // Save the token in localStorage or cookies if needed
+      localStorage.setItem('authToken', token);
+
+      // Redirect to another page
+      window.location.href = '/explore';
+    }
+  } catch (error) {
+    // Handle error (e.g., show an error message)
+    console.error('Login failed:', error);
+    alert('Invalid username or password.');
+  }
+};
 </script>
