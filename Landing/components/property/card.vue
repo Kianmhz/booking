@@ -42,7 +42,7 @@ const stores = ref([
       "cottage3.png",
     ],
     description: "A cozy cottage in the woods.",
-    link: "/store",
+    link: "/property",
     activeImageIndex: 0
   },
   {
@@ -54,7 +54,7 @@ const stores = ref([
       "beach3.png",
     ],
     description: "A beautiful villa by the beach.",
-    link: "/store",
+    link: "/property",
     activeImageIndex: 0
   },
   {
@@ -66,7 +66,7 @@ const stores = ref([
       "condo3.png",
     ],
     description: "An apartment in the heart of the city.",
-    link: "/store",
+    link: "/property",
     activeImageIndex: 0
   },
   {
@@ -78,7 +78,7 @@ const stores = ref([
       "mount3.png",
     ],
     description: "A lodge with stunning mountain views.",
-    link: "/store",
+    link: "/property",
     activeImageIndex: 0
   }
 ]);
