@@ -60,7 +60,7 @@ const password = ref('');
 
 const login = async () => {
   try {
-    const response = await $fetch(`${apiHost}/auth/login`, {
+    const response = await $fetch(`${apiHost}/auth`, {
       method: 'POST',
       body: {
         username: username.value,
