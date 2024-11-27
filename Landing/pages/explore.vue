@@ -1,4 +1,0 @@
-<template>
-    <PropertyCard />
-    <BasePagination />
-</template>
